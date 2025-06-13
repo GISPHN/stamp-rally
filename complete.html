@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>コンプリートおめでとう！</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="complete-bg">
+  <div class="celebrate">
+    <img src="complete.png" alt="Complete!" style="width:120px;">
+    <h1>全コンテンツ制覇！おめでとうございます🎉</h1>
+    <p>受付で画面を見せて、ノベルティをゲットしよう！</p>
+    <div class="sns-buttons">
+      <button onclick="postToX()">Xでシェア</button>
+      <button onclick="postToInstagram()">Instagramでシェア</button>
+    </div>
+    <p style="margin-top:2em;">#奈良医大オープンキャンパス #公衆衛生看護 #スタンプラリー</p>
+    <p style="margin-top:2em;">
+      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=Bycr8C9qr0OIGn2b3leOnXGJgfu89ktLrj4XxshMettUQ1FHUkMyRUEwWU9TMzYzNFIwMDZHVU5ZWi4u" target="_blank" style="font-size:1.3em; color: #2196f3; font-weight: bold;">アンケートに答える（ノベルティ対象）</a>
+    </p>
+  </div>
+  <script>
+    function postToX() {
+      const txt = encodeURIComponent("奈良県立医科大学のオープンキャンパスで公衆衛生看護学スタンプラリー全制覇！ #奈良医大オープンキャンパス");
+      window.open("https://twitter.com/intent/tweet?text=" + txt, "_blank");
+    }
+    function postToInstagram() {
+      alert("Instagramは画像投稿専用のため、スクリーンショットを投稿してね！");
+    }
+  </script>
+</body>
+</html>
