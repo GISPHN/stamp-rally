@@ -3,10 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>デジタルスタンプラリー｜オープンキャンパス</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for camera icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- QRコードリーダーライブラリ -->
+  <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
 </head>
 <body>
   <h1>デジタルスタンプラリー<br>公衆衛生看護学領域</h1>
+
+  <!-- カメラ起動ボタン -->
+  <button id="open-camera" class="camera-btn">
+    <i class="fa-solid fa-camera"></i>
+    <div>カメラを開く</div>
+  </button>
+
+  <!-- QRコード読み取りエリア（最初は非表示） -->
+  <div id="qr-reader" style="width:320px; margin: 1em auto; display:none;"></div>
+
   <div id="stamps">
     <div class="stamp" id="stamp-qgis">
       <img src="qgis.png" alt="QGIS体験" /><br>QGIS体験
